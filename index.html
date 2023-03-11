@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- The icon link -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="    
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Smythe&display=swap" rel="stylesheet">
+    <title>BS Paint</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>BS Paint</h1>
+            <ul>
+                <li><u>F</u>ile</li>
+                <li><u>E</u>dit</li>
+                <li><u>V</u>iew</li>
+                <li><u>H</u>elp</li>
+            </ul>
+            <div class="dropdown-text">
+                <p>Pick a color</p>
+                <p>Click and drag to draw</p>
+                <p>Clear erases the whole picture</p>
+                <p>Show grid for pixel art</p>
+
+            </div>
+        </header>
+        
+        <main>
+            <div class="tools-el">
+                <section class="color-section" id="color-section">
+                    <div class="color-choice white" data-color="white"></div>
+                    <div class="color-choice black" data-color="black"></div>
+                    <div class="color-choice grey" data-color="grey"></div>
+                    <div class="color-choice red" data-color="red"></div>
+                    <div class="color-choice orange" data-color="orange"></div>
+                    <div class="color-choice yellow" data-color="yellow"></div>
+                    <div class="color-choice green" data-color="green"></div>
+                    <div class="color-choice blue" data-color="blue"></div>
+                    <div class="color-choice indigo" data-color="indigo"></div>
+                    <div class="color-choice violet" data-color="violet"></div>
+                </section>
+
+                <section class="current-info">
+                    <div class="color-choice" id="eraser-el" data-color="white"><i class="fa-solid fa-pencil"></i></div>
+                    <div class="color-choice" id="selected-color"></div>
+                </section>
+                
+                <section class="buttons" id="buttons-section">
+                    <button id="reset-btn">Clear</button>
+                    <button id="show-grid">Show Grid</button>
+                </section>    
+            </div>
+
+            <section class="drawing-section" id="drawing-section">
+                <!-- js creates this -->
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* Global attributes */
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Smythe', cursive;
+    background-image: url(windows-bc-grnd.jpg);
+    background-color: rgb(96, 96, 255);
+  }
+
+  #container {
+    border: 4px ridge rgb(227, 227, 254);
+    width: 500px;
+  }
+
+  body, 
+  #container,
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main,
+  header ul, 
+  .current-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  
+/* Individual sections attributes */
+  
+  /* Header section, includes dropdown menu */
+  
+    header {
+      position: relative;
+    }
+
+    header ul {
+      font-size: 16px;
+      list-style-type: none;
+      padding-left: 5px;
+      margin: 0;
+      background-color: rgb(170, 170, 255);
+      border-bottom: 1px solid rgb(144, 144, 255);
+    }
+
+    header h1 {
+      background-color: blue;
+      font-size: 24px;
+      padding-left: 5px;
+      margin: 0;
+    }
+
+    header li {
+      padding-right: 10px;
+      cursor: pointer;
+    }
+
+    header li:hover {
+      background-color: rgb(141, 141, 224);
+    }
+
+    header:hover .dropdown-text {
+      display: block;
+    }
+
+    .dropdown-text {
+      display: none;
+      position: absolute;
+      font-size: 12px;
+      padding: 4px;
+      border: 1px solid rgb(76, 76, 76);
+      background-color: rgb(222, 222, 232);
+      z-index: 1;
+    }
+
+
+  /* Everything else */
+
+    main {
+      background-color: rgb(227, 227, 254);
+      padding: 5px;
+    }
+
+    .pixel{
+        width: 10px;
+        height: 10px;
+        font-size: 5px;
+    }
+
+    .pixel-row{
+        border: 1px solid red;
+        padding: 0;
+        margin: 0;
+    }
+
+    .drawing-section{
+        border: 3px groove lightgray;
+        width: auto; 
+        height: auto;  
+        display: inline-grid;
+        grid-template-columns: repeat(21, 2fr);
+        column-gap: 0px;
+        row-gap: 0px;
+        margin-left: 20px;
+    }
+
+    .tools-el {
+      padding-left: 8px;
+    }
+
+    .color-section{
+        border: 3px groove lightgray; 
+        display: inline-grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-right: 10px;
+      }
+
+    .color-choice{
+        border: 1px inset gray;
+        width: 20px;
+        height: 20px;
+      }
+
+      #selected-color{
+        background-color: white;
+        border: 1px solid grey;
+      }
+
+      .current-info {
+        border: 3px groove lightgray;
+        margin-right: 10px;
+        margin-top: 5px;
+      }
+
+      button {
+        font-size: 10px;
+        padding: 0;
+        margin-top: 4px;
+        margin-right: 4px;
+      }
+
+/* This controls color selection when drawing */
+
+    .white {
+      background-color: white;
+    }
+
+    .grey {
+      background-color: rgb(76, 76, 76);
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .orange {
+      background-color: orange;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .indigo {
+      background-color: indigo;
+    }
+
+    .violet {
+      background-color: violet;
+    }
